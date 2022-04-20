@@ -1,0 +1,58 @@
+.switch {
+    &__checkbox {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    &__label {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: gray;
+        border-radius: 28px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__button {
+        position: absolute;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background: white;
+        border-radius: inherit;
+        transition: all 0.2s;
+    }
+}
+
+.switch__checkbox:checked ~ label .switch__button {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.switch__checkbox:checked ~ label {
+    background-color: green;
+}
+
+$sizes: 25, 50, 100, 150, 200, 250, 300;
+$sizeButtons: (
+    25: 25%,
+    50: 50%,
+);
+
+@each $size in $sizes {
+    .switch__label--width-#{$size} {
+        width: #{$size}px;
+    }
+
+    .switch__label--height-#{$size} {
+        height: #{$size}px;
+    }
+}
+
+@each $size, $percent in $sizeButtons {
+    .switch__button--width-#{$size}-percent {
+        width: $percent;
+    }
+}

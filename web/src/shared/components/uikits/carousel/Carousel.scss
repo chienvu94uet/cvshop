@@ -1,0 +1,16 @@
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    background-color: green;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}

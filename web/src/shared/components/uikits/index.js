@@ -5,3 +5,4 @@ export { default as Paging } from "./paging/Paging";
 export { default as Radio } from "./radio/Radio";
 export { default as Switch } from "./switch/Switch";
 export { default as Tooltip } from "./tooltip/Tooltip";
+export { default as Carousel } from "./carousel/Carousel";

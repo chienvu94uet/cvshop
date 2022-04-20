@@ -1,0 +1,33 @@
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #ccc;
+    transition: all 0.3s;
+    padding-top: 48px;
+}
+// the transitions only occur when the className is active.
+// https://blog.openreplay.com/how-to-add-animations-with-react-transition-group
+.menu-mobile-transition-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.menu-mobile-transition-enter-done {
+    transition: all 0.2s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-mobile-transition-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-mobile-transition-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.2s;
+}

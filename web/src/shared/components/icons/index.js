@@ -2,6 +2,7 @@
 export { default as BellIcon } from "./Bell";
 export { default as CheckIcon } from "./Check";
 export { default as CodeIcon } from "./Code";
+export { default as CloseIcon } from "./Close";
 export { default as DatabaseIcon } from "./Database";
 export { default as EyeIcon } from "./Eye";
 export { default as EyeOffIcon } from "./EyeOff";
