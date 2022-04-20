@@ -1,4 +1,4 @@
 {
-    "PORT": 1911,
-    "MONGO_URI": "mongodb+srv://chienvu1911:chienvu19!!94@shopbase.j8kcr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "MONGO_URI": "mongodb+srv://chienvu1911:chienvu19!!94@shopbase.j8kcr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "PORT": 1911
 }
