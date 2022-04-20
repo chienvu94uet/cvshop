@@ -20,6 +20,22 @@
     left: $left;
 }
 
+@mixin centerY {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centerX {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin centerBlock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @mixin centerAbsolute($top, $left) {
     position: absolute;
     top: $top;

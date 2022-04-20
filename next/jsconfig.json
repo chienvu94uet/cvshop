@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/icons/*": ["components/icons/*"],
+      "@/uikits/*": ["components/uikits/*"],
+      "@/layouts/*": ["components/layouts/*"],
+      "@/styles/*": ["styles/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/public/*": ["public/*"],
+      "@/enums/*": ["enums/*"]
+    }
+  }
+}

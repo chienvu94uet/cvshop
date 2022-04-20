@@ -1,5 +1,27 @@
 .container {
-    max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#go-to-top {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+    background-color: $background-primary;
+    color: $color-white;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
 }
