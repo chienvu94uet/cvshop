@@ -1,10 +1,16 @@
 import React from "react";
 import "./Checkbox.scss";
 
-const Checkbox = ({ label, checked, onChange }) => {
+const Checkbox = ({ id, label, checked, onChange, name }) => {
   return (
-    <label>
-      <input type="checkbox" checked={checked} onChange={onChange} />
+    <label htmlFor={id}>
+      <input
+        id={id}
+        type="checkbox"
+        name={name}
+        checked={checked}
+        onChange={onChange}
+      />
       {label}
     </label>
   );

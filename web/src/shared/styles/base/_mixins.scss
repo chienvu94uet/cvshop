@@ -93,3 +93,19 @@
     width: $width;
     height: $height;
 }
+
+@mixin scrollbar($width, $radius) {
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $background-gray;
+        border-radius: $radius;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $background-lighter;
+        border-radius: $radius;
+    }
+}

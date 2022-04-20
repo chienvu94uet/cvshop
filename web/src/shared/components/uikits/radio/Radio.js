@@ -1,10 +1,16 @@
 import React from "react";
 import "./Radio.scss";
 
-const Radio = ({ label, checked, onChange }) => {
+const Radio = ({ id, label, checked, onChange, name }) => {
   return (
-    <label>
-      <input type="radio" checked={checked} onChange={onChange} />
+    <label htmlFor={id}>
+      <input
+        id={id}
+        name={name}
+        type="radio"
+        checked={checked}
+        onChange={onChange}
+      />
       {label}
     </label>
   );
