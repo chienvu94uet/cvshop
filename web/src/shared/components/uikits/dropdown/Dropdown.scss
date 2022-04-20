@@ -1,0 +1,66 @@
+@import "shared/styles/base/variables";
+@import "shared/styles/base/mixins";
+
+.dropdown-container {
+    border: 1px solid $color-border;
+    border-radius: 5px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+}
+
+.dropdown-input {
+    padding: 5px;
+    user-select: none;
+    @include flex(center, space-between);
+}
+
+.dropdown-menu {
+    position: absolute;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 150px;
+    width: 100%;
+    transform: translateY(4px);
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-border;
+    }
+}
+
+.dropdown-item.selected {
+    background-color: rgb(112, 160, 130);
+}
+
+.dropdown-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.dropdown-tag {
+    padding: 2px 4px;
+    background-color: $color-border;
+    @include flex(center, null);
+}
+
+.dropdown-tag-close {
+    @include flex(center, null);
+}
+
+.search-box {
+    padding: 5px;
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4px;
+        border-radius: 4px;
+    }
+}

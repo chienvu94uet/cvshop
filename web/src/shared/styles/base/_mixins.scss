@@ -7,11 +7,44 @@
     display: flex;
 }
 
+@mixin flexbox($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin position($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin centerAbsolute($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    @if $top {
+        transform: translateY(-$top);
+    }
+    @if $left {
+        transform: translateX(-$left);
+    }
+}
+
 @mixin text-truncate($width) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: $width;
+}
+
+@mixin multilineText($line: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin placeholder {
@@ -29,6 +62,30 @@
 
     :-ms-input-placeholder {
         @content;
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    } @else if $point == laptop {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    } @else if $point == tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $point == phablet {
+        @media (min-width: 767px) {
+            @content;
+        }
+    } @else if $point == mobileonly {
+        @media (max-width: 480px) {
+            @content;
+        }
     }
 }
 

@@ -5,6 +5,12 @@ const initialState = {
   modal: {
     isShow: false,
   },
+  bag: {
+    total: 0,
+  },
+  toast: {
+    isShow: false,
+  },
 };
 
 export default initialState;

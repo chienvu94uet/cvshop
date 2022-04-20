@@ -8,6 +8,8 @@ const AppProvider = ({ children }) => {
     combineReducer({
       auth: AuthReducer,
       modal: ModalReducer,
+      bag: BagReducer,
+      toast: ToastReducer,
     }),
     initialState
   );
