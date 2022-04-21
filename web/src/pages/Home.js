@@ -1,12 +1,7 @@
 import React from "react";
-import { Rating } from "shared/components/uikits";
 
 const Home = () => {
-  return (
-    <>
-      <Rating />
-    </>
-  );
+  return <></>;
 };
 
 export default Home;
