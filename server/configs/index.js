@@ -1,7 +1,7 @@
-const config = require("./config");
+const env = require("./env");
 const db = require("./db");
 
 module.exports = {
-  config,
+  env,
   db,
 };

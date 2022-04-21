@@ -3,6 +3,8 @@
     "server\\node_modules": true,
     "server\\package-lock.json": true,
     "web\\node_modules": true,
-    "web\\package-lock.json": true
+    "web\\package-lock.json": true,
+    "next\\node_modules": true,
+    "next\\yarn.lock": true
   }
 }

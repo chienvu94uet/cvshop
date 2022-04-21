@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { MONGO_URI } = require("./config");
+const { MONGO_URI } = require("./env");
 
 const connectMongoDB = async () => {
   try {
@@ -11,6 +11,4 @@ const connectMongoDB = async () => {
   }
 };
 
-module.exports = {
-  connectMongoDB,
-};
+module.exports = connectMongoDB;
