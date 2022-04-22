@@ -1,0 +1,20 @@
+@import "../../../styles/base/variables";
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    &--default {
+        border: 1px solid #ccc;
+    }
+
+    &--primary {
+        border: 0;
+        background-color: $primary-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 20%);
+        }
+    }
+}

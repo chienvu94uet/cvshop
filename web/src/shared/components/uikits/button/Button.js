@@ -4,9 +4,10 @@ import "./Button.scss";
 
 const Button = ({ onClick, children, disabled, type, size }) => {
   const className = css({
-    button: true,
-    [`button--${type}`]: type,
-    [`button--${size}`]: size,
+    btn: true,
+    "btn--default": !type,
+    [`btn--${type}`]: type,
+    [`btn--${size}`]: size,
   });
 
   return (

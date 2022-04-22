@@ -12,6 +12,17 @@
   <div id="root"></div>
   <div id="modal-root"></div>
   <div id="menu-mobile-root"></div>
+  <button type="button" id="dynamic-import">Dynamic Import</button>
+
+  <script type="module">
+    document.querySelector("#dynamic-import").addEventListener("click", () => {
+      async function loadModule() {
+        let dynamicModule = await import('./dynamic-import/index.js');
+        dynamicModule.logDynamic();
+      }
+      loadModule();
+    })
+  </script>
 </body>
 
 </html>
